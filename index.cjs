@@ -1,6 +1,5 @@
 const fs = require('fs');
-
-import('inquirer').then((inquirer) => {
+const inquirer = require('inquirer');
 
 
 //create question prompts
@@ -37,7 +36,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'License',
+        name: 'license',
         message: 'Choose license for your application:',
         choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'None']
     },
@@ -55,7 +54,37 @@ const questions = [
 // this is where i will generate the content created by user input
 function generateREADME(answers) {
     return `
-    
+    # ${answers.title}
+
+    ## Description
+    ${answers.description}
+
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+
+    ## Installation
+    ${answers.installation}
+
+    ## Usage
+    ${answers.usage}
+
+    ## License
+    ${answers.license}
+
+    ## Contributing
+    ${answers.contributing}
+
+    ## Tests
+    ${answers.tests}
+
+    ## Questions
+    ${answers.email}
+    ${answers.username}
     `;
 }
 
@@ -78,6 +107,3 @@ function promptUser() {
 }
 
 promptUser();
-}).catch((err) => {
-    console.error('Error:', err);
-});
