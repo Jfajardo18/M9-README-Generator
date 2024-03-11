@@ -1,5 +1,8 @@
-const fs = require('fs');
-const inquirer = require('inquirer');
+// const fs = require('fs');
+// const inquirer = require('inquirer');
+
+import fs from 'fs';
+import inquirer from 'inquirer';
 
 
 //create question prompts
@@ -35,7 +38,7 @@ const questions = [
         message: 'Enter project test instructions:'
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Choose license for your application:',
         choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'None']

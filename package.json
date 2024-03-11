@@ -6,7 +6,7 @@
   
   "description": "Node homework to generate a README file",
   
-  "main": "index.cjs",
+  "main": "index.js",
   
   "scripts": {
   
@@ -23,8 +23,13 @@
   
   "dependencies": {
   
+
     
   "inquirer": "^9.2.15"
   
-  }
+  },
+
+  "type": "module"
+
+
 }
