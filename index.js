@@ -85,7 +85,7 @@ function generateREADME(answers) {
     ## Tests
     ${answers.tests}
 
-    ## Questions
+    ## Questions - contact me here:
     ${answers.email}
     ${answers.username}
     `;
