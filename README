@@ -1,0 +1,33 @@
+# Homework README Generator
+
+## Overview
+This README generator is a Node.js application designed to simplify the process of creating README files for homework assignments. It uses the Inquirer package to prompt users for basic input, allowing them to generate a customized README.md file for their projects.
+
+## Features
+- **Node.js Integration**: Built using Node.js for server-side functionality.
+- **Inquirer Package**: Utilizes the Inquirer package for prompting users and gathering input.
+- **JSON Configuration**: Stores and parses configuration data using JSON.
+- **Customizable Templates**: Allows users to input information such as project title, description, installation instructions, usage, contribution guidelines, test instructions, etc., to generate a personalized README.
+- **Saves Time**: Streamlines the process of creating README files, saving users valuable time.
+
+## Usage
+1. Clone the repository to your local machine.
+2. Install Node.js if you haven't already.
+3. Navigate to the project directory in your terminal.
+4. Run `npm install` to install dependencies.
+5. Run `node index.js` to start the README generator.
+6. Follow the prompts to input information about your assignment.
+7. Once completed, a README.md file will be generated in the project directory.
+
+## Sections
+1. **Title**: Enter the title of your assignment.
+2. **Description**: Provide a brief description of your project.
+3. **Installation**: Specify the installation instructions for your project.
+4. **Usage**: Describe how your project should be used.
+5. **Contribution Guidelines**: Explain how others can contribute to your project.
+6. **Test Instructions**: Provide instructions for testing your project.
+7. **License**: Choose a license for your application from the provided options.
+8. **GitHub Username and Email**: Enter your GitHub username and email address.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
